@@ -51,9 +51,17 @@ header {
 }
 .logo { display: flex; align-items: center; gap: 8px; font-family: 'Fraunces', serif; font-size: 19px; font-weight: 700; }
 .logo .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 12px var(--accent); flex-shrink: 0; }
-.nav-links { display: flex; gap: 28px; font-size: 14px; color: var(--muted); }
+.nav-links { display: flex; align-items: center; gap: 28px; font-size: 14px; color: var(--muted); }
 .nav-links a { transition: color .15s ease; }
 .nav-links a:hover, .nav-links a.active { color: var(--text); }
+.lang-link {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 4px 11px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+.lang-link:hover, .lang-link.active { color: var(--text); border-color: var(--accent); }
 .cta-btn {
   background: linear-gradient(135deg, var(--accent), var(--accent2));
   color: var(--bg);
