@@ -1,0 +1,20 @@
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="logo"><span class="dot"></span> Vibr'Up</a>
+    <nav class="nav-links">
+      <a href="index.html"{{ _nav.home_active }}>{{ nav.home }}</a>
+      <a href="{{ _nav.resources_href }}"{{ _nav.resources_active }}>{{ nav.resources }}</a>
+      <a href="{{ _nav.guidance_href }}"{{ _nav.guidance_active }}>{{ nav.guidance }}</a>
+      <a href="index.html#tarifs">{{ nav.pricing }}</a>
+      <a href="{{ _nav.contact_href }}"{{ _nav.contact_active }}>{{ nav.contact }}</a>
+      <div class="lang-switch">
+        <a href="{{ _nav.lang1_href }}" class="lang-link">{{ _nav.lang1_label }}</a>
+        <a href="{{ _nav.lang2_href }}" class="lang-link">{{ _nav.lang2_label }}</a>
+      </div>
+    </nav>
+    <div class="nav-right">
+      <button class="cta-btn">{{ common.start_free_cta }}</button>
+      <button class="menu-toggle" aria-label="{{ common.open_menu_aria }}"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
