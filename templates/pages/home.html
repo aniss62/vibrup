@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="{{ _lang_html }}">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{{ pages.home.meta.title }}</title>
+<meta name="description" content="{{ pages.home.meta.description }}" />
+<link rel="alternate" hreflang="fr" href="{{ _hreflang.fr }}" />
+<link rel="alternate" hreflang="en" href="{{ _hreflang.en }}" />
+<link rel="alternate" hreflang="es" href="{{ _hreflang.es }}" />
+<link rel="alternate" hreflang="x-default" href="{{ _hreflang.x_default }}" />
+<link rel="stylesheet" href="{{ _asset_prefix }}styles.css" />
+</head>
+<body>
+
+{{ _nav_block }}
+
+<section class="hero">
+  <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1527841430192-32adc8530984?auto=format&fit=crop&w=1800&q=80')"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">{{ pages.home.hero.eyebrow }}</div>
+      <h1>{{ pages.home.hero.title }}</h1>
+      <p>{{ pages.home.hero.lead }}</p>
+      <div class="hero-actions">
+        <button class="btn-primary">{{ common.start_free_cta }}</button>
+        <a href="{{ _nav.guidance_href }}" class="btn-ghost">{{ pages.home.hero.cta_ghost }}</a>
+      </div>
+    </div>
+    <div class="orb-hero">
+      <div class="orb-ring"></div>
+      <div class="orb"></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="photo-band" style="background-image:url('https://images.unsplash.com/photo-1559586616-361e18714958?auto=format&fit=crop&w=1600&q=80')">
+      <div class="photo-band-content">
+        <div class="eyebrow">{{ pages.home.photo_rhythm.eyebrow }}</div>
+        <p class="quote">{{ pages.home.photo_rhythm.quote }}</p>
+        <div class="credit">{{ pages.home.photo_rhythm.credit }}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pratique">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">{{ pages.home.practice.eyebrow }}</div>
+      <h2>{{ pages.home.practice.title }}</h2>
+      <p>{{ pages.home.practice.lead }}</p>
+    </div>
+    <div class="features">
+      <div class="feature-card">
+        <div class="feature-icon">✦</div>
+        <h3>{{ pages.home.practice.card1_title }}</h3>
+        <p>{{ pages.home.practice.card1_body }}</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">〜</div>
+        <h3>{{ pages.home.practice.card2_title }}</h3>
+        <p>{{ pages.home.practice.card2_body }}</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">↝</div>
+        <h3>{{ pages.home.practice.card3_title }}</h3>
+        <p>{{ pages.home.practice.card3_body }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="guidance-teaser">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">{{ pages.home.guidance_teaser.eyebrow }}</div>
+      <h2>{{ pages.home.guidance_teaser.title }}</h2>
+      <p>{{ pages.home.guidance_teaser.lead }}</p>
+    </div>
+    {{ _hamann_bio_block }}
+  </div>
+</section>
+
+<section id="ressources-teaser">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">{{ pages.home.resources_teaser.eyebrow }}</div>
+      <h2>{{ pages.home.resources_teaser.title }}</h2>
+      <p>{{ pages.home.resources_teaser.lead }}</p>
+    </div>
+    <div class="article-grid">
+      <a class="article-card link" href="{{ _nav.article_href }}">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1622489968558-9bf6f30dcb2a?auto=format&fit=crop&w=800&q=80')"></div>
+        <div class="body">
+          <div class="tag">{{ pages.home.resources_teaser.featured_tag }}</div>
+          <h3>{{ pages.home.resources_teaser.featured_title }}</h3>
+          <p>{{ pages.home.resources_teaser.featured_desc }}</p>
+          <div class="meta">{{ pages.home.resources_teaser.featured_meta }}</div>
+        </div>
+      </a>
+      <div class="article-card soon">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1668689723080-c50f6e823de5?auto=format&fit=crop&w=800&q=80')"><span class="badge">{{ pages.home.resources_teaser.soon_badge }}</span></div>
+        <div class="body">
+          <div class="tag">{{ pages.home.resources_teaser.card2_tag }}</div>
+          <h3>{{ pages.home.resources_teaser.card2_title }}</h3>
+          <p>{{ pages.home.resources_teaser.card2_desc }}</p>
+        </div>
+      </div>
+      <div class="article-card soon">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1689322366136-4740ee40d932?auto=format&fit=crop&w=800&q=80')"><span class="badge">{{ pages.home.resources_teaser.soon_badge }}</span></div>
+        <div class="body">
+          <div class="tag">{{ pages.home.resources_teaser.card3_tag }}</div>
+          <h3>{{ pages.home.resources_teaser.card3_title }}</h3>
+          <p>{{ pages.home.resources_teaser.card3_desc }}</p>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:28px; text-align:center;">
+      <a href="{{ _nav.resources_href }}" class="btn-ghost">{{ pages.home.resources_teaser.see_all }}</a>
+    </div>
+  </div>
+</section>
+
+<section id="tarifs">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">{{ pages.home.pricing.eyebrow }}</div>
+      <h2>{{ pages.home.pricing.title }}</h2>
+    </div>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <div class="tier">{{ pages.home.pricing.free_tier }}</div>
+        <div class="amount">{{ pages.home.pricing.free_amount }}</div>
+        <ul>
+          <li>{{ pages.home.pricing.free_item1 }}</li>
+          <li>{{ pages.home.pricing.free_item2 }}</li>
+          <li>{{ pages.home.pricing.free_item3 }}</li>
+        </ul>
+        <button class="btn-ghost">{{ pages.home.pricing.free_cta }}</button>
+      </div>
+      <div class="price-card highlight">
+        <div class="tier">Vibr'Up+</div>
+        <div class="amount">{{ pages.home.pricing.plus_amount }}</div>
+        <ul>
+          <li>{{ pages.home.pricing.plus_item1 }}</li>
+          <li>{{ pages.home.pricing.plus_item2 }}</li>
+          <li>{{ pages.home.pricing.plus_item3 }}</li>
+          <li>{{ pages.home.pricing.plus_item4 }}</li>
+        </ul>
+        <button class="btn-primary">{{ pages.home.pricing.plus_cta }}</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="photo-band" style="background-image:url('https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?auto=format&fit=crop&w=1800&q=80')">
+      <div class="photo-band-content">
+        <div class="eyebrow">{{ pages.home.photo_earth.eyebrow }}</div>
+        <p class="quote">{{ pages.home.photo_earth.quote }}</p>
+        <div class="credit">{{ pages.home.photo_earth.credit }}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ _footer_block }}
+
+{{ _whatsapp_block }}
+<script src="{{ _asset_prefix }}script.js"></script>
+</body>
+</html>
