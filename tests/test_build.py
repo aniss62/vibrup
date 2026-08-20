@@ -45,6 +45,21 @@ class TestRender(unittest.TestCase):
     def test_leaves_non_placeholder_text_untouched(self):
         self.assertEqual(render("<p>plain text</p>", {}), "<p>plain text</p>")
 
+    def test_missing_key_message_has_no_stray_quotes(self):
+        with self.assertRaises(KeyError) as cm:
+            render("{{ pages.home.missing }}", {"pages": {"home": {}}})
+        # KeyError.__str__ always reprs args[0] (a CPython quirk unique to
+        # KeyError), so a single layer of quoting around the whole message
+        # is expected. The bug fixed here was a *second*, compounding layer
+        # of quoting (an inner "'...'" baked into the message text) caused
+        # by interpolating the inner KeyError via `{e}` (-> str(e), which
+        # reprs) instead of `{e.args[0]}` (the raw path). Pin the exact text
+        # so that regression is caught.
+        self.assertEqual(
+            str(cm.exception),
+            "'missing translation key: pages.home.missing'",
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

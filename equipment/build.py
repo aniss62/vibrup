@@ -32,5 +32,5 @@ def render(template_text, context):
         try:
             return str(resolve(context, match.group(1)))
         except KeyError as e:
-            raise KeyError(f"missing translation key: {e}") from None
+            raise KeyError(f"missing translation key: {e.args[0]}") from None
     return PLACEHOLDER_RE.sub(_sub, template_text)
