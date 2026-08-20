@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="{{ _lang_html }}">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{{ pages.contact.meta.title }}</title>
+<meta name="description" content="{{ pages.contact.meta.description }}" />
+<link rel="alternate" hreflang="fr" href="{{ _hreflang.fr }}" />
+<link rel="alternate" hreflang="en" href="{{ _hreflang.en }}" />
+<link rel="alternate" hreflang="es" href="{{ _hreflang.es }}" />
+<link rel="alternate" hreflang="x-default" href="{{ _hreflang.x_default }}" />
+<link rel="stylesheet" href="{{ _asset_prefix }}styles.css" />
+</head>
+<body>
+
+{{ _nav_block }}
+
+<section>
+  <div class="wrap">
+    <div class="section-head center">
+      <div class="eyebrow">{{ pages.contact.hero.eyebrow }}</div>
+      <h2>{{ pages.contact.hero.title }}</h2>
+      <p>{{ pages.contact.hero.lead }}</p>
+    </div>
+
+    <div class="contact-card">
+      <form action="https://formspree.io/f/mgawyzjj" method="POST">
+        <p class="contact-intro">{{ pages.contact.form.intro }}</p>
+
+        <div class="field">
+          <label for="ressenti">{{ pages.contact.form.feeling_label }}</label>
+          <textarea id="ressenti" name="{{ pages.contact.form.feeling_field_name }}" rows="3" placeholder="{{ pages.contact.form.feeling_placeholder }}"></textarea>
+        </div>
+
+        <div class="field">
+          <label for="ou-en-es-tu">{{ pages.contact.form.stage_label }}</label>
+          <select id="ou-en-es-tu" name="{{ pages.contact.form.stage_field_name }}">
+            <option value="">{{ pages.contact.form.stage_opt0 }}</option>
+            <option>{{ pages.contact.form.stage_opt1 }}</option>
+            <option>{{ pages.contact.form.stage_opt2 }}</option>
+            <option>{{ pages.contact.form.stage_opt3 }}</option>
+            <option>{{ pages.contact.form.stage_opt4 }}</option>
+            <option>{{ pages.contact.form.stage_opt5 }}</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="message">{{ pages.contact.form.message_label }}</label>
+          <textarea id="message" name="{{ pages.contact.form.message_field_name }}" rows="3" placeholder="{{ pages.contact.form.message_placeholder }}"></textarea>
+        </div>
+
+        <div class="row-2">
+          <div class="field" style="margin-bottom:0;">
+            <label for="prenom">{{ pages.contact.form.firstname_label }}</label>
+            <input id="prenom" name="{{ pages.contact.form.firstname_field_name }}" type="text" placeholder="{{ pages.contact.form.firstname_placeholder }}" />
+          </div>
+          <div class="field" style="margin-bottom:0;">
+            <label for="contact">{{ pages.contact.form.contact_label }}</label>
+            <input id="contact" name="{{ pages.contact.form.contact_field_name }}" type="text" placeholder="{{ pages.contact.form.contact_placeholder }}" required />
+          </div>
+        </div>
+
+        <button type="submit" class="btn-primary" style="width:100%; margin-top: 22px;">{{ pages.contact.form.submit }}</button>
+        <p class="submit-note">{{ pages.contact.form.submit_note }}</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+{{ _footer_block }}
+
+{{ _whatsapp_block }}
+<script src="{{ _asset_prefix }}script.js"></script>
+</body>
+</html>
