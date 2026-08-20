@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contacto — Vibr'Up</title>
+<meta name="description" content="¿Cómo estás hoy? Escríbenos unas palabras, a tu ritmo." />
+<link rel="alternate" hreflang="fr" href="https://www.vibr-up.com/contact.html" />
+<link rel="alternate" hreflang="en" href="https://www.vibr-up.com/en/contact.html" />
+<link rel="alternate" hreflang="es" href="https://www.vibr-up.com/es/contacto.html" />
+<link rel="alternate" hreflang="x-default" href="https://www.vibr-up.com/contact.html" />
+<link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="logo"><span class="dot"></span> Vibr'Up</a>
+    <nav class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="recursos.html">Recursos</a>
+      <a href="guidance.html">Guidance</a>
+      <a href="index.html#tarifs">Precios</a>
+      <a href="contacto.html" class="active">Contacto</a>
+      <div class="lang-switch">
+        <a href="../contact.html" class="lang-link">FR</a>
+        <a href="../en/contact.html" class="lang-link">EN</a>
+      </div>
+    </nav>
+    <div class="nav-right">
+      <button class="cta-btn">Empezar gratis</button>
+      <button class="menu-toggle" aria-label="Abrir el menú"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="section-head center">
+      <div class="eyebrow">hablemos</div>
+      <h2>¿Cómo estás hoy?</h2>
+      <p>No hace falta explicarlo todo. Unas palabras bastan para empezar una conversación, a tu ritmo.</p>
+    </div>
+
+    <div class="contact-card">
+      <form action="https://formspree.io/f/mgawyzjj" method="POST">
+        <p class="contact-intro">Este formulario no es un cuestionario. Responde solo a lo que te inspire — todo es opcional excepto una forma de volver a contactarte.</p>
+
+        <div class="field">
+          <label for="ressenti">¿Cómo te sientes en este momento?</label>
+          <textarea id="ressenti" name="Sensación actual" rows="3" placeholder="En pocas palabras, lo que está presente para ti hoy…"></textarea>
+        </div>
+
+        <div class="field">
+          <label for="ou-en-es-tu">¿En qué punto de tu camino estás?</label>
+          <select id="ou-en-es-tu" name="En qué punto estás">
+            <option value="">Prefiero no decirlo</option>
+            <option>Estoy recién descubriendo esto</option>
+            <option>Estoy tratando de entender lo que pasa dentro de mí</option>
+            <option>Estoy en plena transición</option>
+            <option>Solo quiero profundizar una práctica</option>
+            <option>Quiero reservar una guidance</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="message">Algo más, si lo necesitas (opcional)</label>
+          <textarea id="message" name="Mensaje" rows="3" placeholder="Lo que quieras compartir, sin obligación…"></textarea>
+        </div>
+
+        <div class="row-2">
+          <div class="field" style="margin-bottom:0;">
+            <label for="prenom">Tu nombre</label>
+            <input id="prenom" name="Nombre" type="text" placeholder="Opcional" />
+          </div>
+          <div class="field" style="margin-bottom:0;">
+            <label for="contact">¿Cómo podemos contactarte?</label>
+            <input id="contact" name="Datos de contacto" type="text" placeholder="Email, teléfono o WhatsApp" required />
+          </div>
+        </div>
+
+        <button type="submit" class="btn-primary" style="width:100%; margin-top: 22px;">Enviar, con calma</button>
+        <p class="submit-note">Lo que escribes aquí queda entre nosotros.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-row">
+    <div class="muted">© 2026 Vibr'Up. Todos los derechos reservados.</div>
+    <div class="footer-links">
+      <a href="acerca-de.html">Acerca de</a>
+      <a href="#">Aviso legal</a>
+      <a href="#">Condiciones</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+  </div>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/33773332104" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.004 3C9.377 3 4 8.373 4 15c0 2.34.687 4.518 1.872 6.35L4 29l7.86-1.833A11.94 11.94 0 0 0 16.004 27C22.63 27 28 21.627 28 15S22.63 3 16.004 3Zm6.98 16.66c-.29.815-1.44 1.5-2.36 1.694-.628.132-1.448.238-4.206-.9-3.53-1.46-5.804-5.037-5.98-5.27-.17-.233-1.43-1.9-1.43-3.622s.902-2.567 1.222-2.92c.29-.32.633-.4.844-.4.21 0 .422.002.606.012.194.01.454-.073.71.542.29.7.986 2.42 1.07 2.596.086.176.144.383.03.616-.114.234-.172.38-.34.585-.17.205-.356.457-.508.614-.17.176-.347.367-.15.72.198.352.878 1.45 1.885 2.35 1.294 1.155 2.386 1.513 2.738 1.684.352.17.558.146.762-.088.204-.234.876-1.02 1.11-1.37.234-.35.468-.29.79-.174.32.117 2.038.96 2.388 1.135.35.176.582.263.668.41.086.146.086.848-.204 1.663Z"/></svg>
+</a>
+<script src="../script.js"></script>
+</body>
+</html>

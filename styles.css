@@ -54,6 +54,7 @@ header {
 .nav-links { display: flex; align-items: center; gap: 28px; font-size: 14px; color: var(--muted); }
 .nav-links a { transition: color .15s ease; }
 .nav-links a:hover, .nav-links a.active { color: var(--text); }
+.lang-switch { display: flex; align-items: center; gap: 6px; }
 .lang-link {
   border: 1px solid var(--accent);
   border-radius: 999px;
