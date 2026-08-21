@@ -10,16 +10,8 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-
-# Logical page -> {lang: path relative to repo root}. Add new pages here.
-PAGES = {
-    "home": {"fr": "index.html", "en": "en/index.html", "es": "es/index.html"},
-    "about": {"fr": "a-propos.html", "en": "en/about.html", "es": "es/acerca-de.html"},
-    "article": {"fr": "article.html", "en": "en/article.html", "es": "es/articulo.html"},
-    "contact": {"fr": "contact.html", "en": "en/contact.html", "es": "es/contacto.html"},
-    "guidance": {"fr": "guidance.html", "en": "en/guidance.html", "es": "es/guidance.html"},
-    "resources": {"fr": "ressources.html", "en": "en/resources.html", "es": "es/recursos.html"},
-}
+sys.path.insert(0, str(ROOT))
+from equipment.site_map import LANGS, PAGES  # noqa: E402
 
 TAG_RE = re.compile(r"<(/?)([a-zA-Z0-9]+)((?:\s+[a-zA-Z-]+(?:=(?:\"[^\"]*\"|'[^']*'))?)*)\s*/?>")
 ATTR_NAME_RE = re.compile(r"([a-zA-Z-]+)(?:=(?:\"[^\"]*\"|'[^']*'))?")
@@ -54,7 +46,7 @@ def diff_report(base_lang, base_skel, lang, other_skel, limit=8):
 
 def check_page(variants):
     skeletons, missing = {}, []
-    for lang in sorted(variants):
+    for lang in LANGS:
         path = ROOT / variants[lang]
         if not path.exists():
             missing.append(lang)
