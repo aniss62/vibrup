@@ -2,25 +2,29 @@
 
 **Goal:** Confirm every localized page (FR at the root, EN under `en/`, ES under
 `es/`) shares the exact same HTML structure — same tags, same attributes, same
-nesting — so a change made in one language doesn't silently drift from the others.
-Only text content is expected to differ.
+nesting. Since every page is generated from a single template per page
+(`templates/pages/*.html`) plus one translation-strings file per language
+(`i18n/<lang>.py`), this is now guaranteed **by construction** — a mismatch can
+only happen if someone hand-edits a generated file directly instead of its
+template, or if a template change accidentally makes structure conditional on
+language. This script is the regression guard for those two cases.
 
-**Inputs needed:** none (python3, already required for local preview).
+**Inputs needed:** none (python3, already required for local preview/build).
 
 **Steps:**
 1. Run `equipment/check-i18n-parity.py`.
 2. Read the report:
    - `[OK]` — the page's translations match structurally.
-   - `[TODO]` — a language is registered but the file doesn't exist yet (not a
-     failure, just unfinished).
-   - `[FAIL]` — the page exists in two+ languages but their structure diverges;
-     the diff shows the first tag positions that differ.
-3. If a page was intentionally restructured (e.g. a new section added), apply the
-   same structural change to its other language versions, then re-run.
-4. When adding a brand-new page, register it in the `PAGES` dict at the top of
-   `equipment/check-i18n-parity.py` first (ask before editing this Blueprint if the
-   workflow itself needs to change, but the `PAGES` registry is equipment config,
-   not the Blueprint, so it's fine to update directly).
+   - `[TODO]` — a language is registered in `equipment/site_map.py` but its
+     output file doesn't exist yet — run `equipment/build.py` first (it may
+     just be stale) before treating this as a real gap.
+   - `[FAIL]` — the page's rendered output diverges structurally between
+     languages. Since structure comes from one shared template, this almost
+     always means someone edited a generated HTML file by hand — restore it
+     with `equipment/build.py` and make the real edit in `templates/` or
+     `i18n/<lang>.py` instead.
+3. To add a brand-new page: register it in `equipment/site_map.py`'s `PAGES`
+   dict, add its template under `templates/pages/`, add its keys to all three
+   `i18n/<lang>.py` files, run `equipment/build.py`, then re-run this check.
 
-**Expected output:** Exit code 0 and all-`[OK]`/`[TODO]` (no `[FAIL]`) when the
-three languages are in sync.
+**Expected output:** Exit code 0 and all-`[OK]`/`[TODO]` (no `[FAIL]`).
