@@ -52,23 +52,24 @@
       <div class="eyebrow">{{ pages.home.practice.eyebrow }}</div>
       <h2>{{ pages.home.practice.title }}</h2>
       <p>{{ pages.home.practice.lead }}</p>
+      <p>{{ pages.home.practice.lead2 }}</p>
     </div>
     <div class="features">
-      <div class="feature-card">
+      <a class="feature-card link" href="{{ _nav.checkin_href }}">
         <div class="feature-icon">✦</div>
         <h3>{{ pages.home.practice.card1_title }}</h3>
         <p>{{ pages.home.practice.card1_body }}</p>
-      </div>
-      <div class="feature-card">
+      </a>
+      <a class="feature-card link" href="{{ _nav.meditations_href }}">
         <div class="feature-icon">〜</div>
         <h3>{{ pages.home.practice.card2_title }}</h3>
         <p>{{ pages.home.practice.card2_body }}</p>
-      </div>
-      <div class="feature-card">
+      </a>
+      <a class="feature-card link" href="{{ _nav.evolution_href }}">
         <div class="feature-icon">↝</div>
         <h3>{{ pages.home.practice.card3_title }}</h3>
         <p>{{ pages.home.practice.card3_body }}</p>
-      </div>
+      </a>
     </div>
   </div>
 </section>
@@ -101,22 +102,22 @@
           <div class="meta">{{ pages.home.resources_teaser.featured_meta }}</div>
         </div>
       </a>
-      <div class="article-card soon">
-        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1668689723080-c50f6e823de5?auto=format&fit=crop&w=800&q=80')"><span class="badge">{{ pages.home.resources_teaser.soon_badge }}</span></div>
+      <a class="article-card link" href="{{ _nav.grounding_href }}">
+        <div class="thumb" style="background-image:url('{{ _asset_prefix }}images/resources-grounding.jpg')"></div>
         <div class="body">
           <div class="tag">{{ pages.home.resources_teaser.card2_tag }}</div>
           <h3>{{ pages.home.resources_teaser.card2_title }}</h3>
           <p>{{ pages.home.resources_teaser.card2_desc }}</p>
         </div>
-      </div>
-      <div class="article-card soon">
-        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1689322366136-4740ee40d932?auto=format&fit=crop&w=800&q=80')"><span class="badge">{{ pages.home.resources_teaser.soon_badge }}</span></div>
+      </a>
+      <a class="article-card link" href="{{ _nav.manifestation_href }}">
+        <div class="thumb" style="background-image:url('{{ _asset_prefix }}images/resources-manifestation.jpg')"></div>
         <div class="body">
           <div class="tag">{{ pages.home.resources_teaser.card3_tag }}</div>
           <h3>{{ pages.home.resources_teaser.card3_title }}</h3>
           <p>{{ pages.home.resources_teaser.card3_desc }}</p>
         </div>
-      </div>
+      </a>
     </div>
     <div style="margin-top:28px; text-align:center;">
       <a href="{{ _nav.resources_href }}" class="btn-ghost">{{ pages.home.resources_teaser.see_all }}</a>

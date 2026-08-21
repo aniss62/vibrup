@@ -2,10 +2,11 @@
   <div class="wrap nav">
     <a href="index.html" class="logo"><span class="dot"></span> Vibr'Up</a>
     <nav class="nav-links">
-      <a href="index.html"{{ _nav.home_active }}>{{ nav.home }}</a>
+      <a href="{{ _nav.about_href }}"{{ _nav.about_active }}>{{ nav.about }}</a>
+      <a href="{{ _nav.home_href }}"{{ _nav.home_active }}>{{ nav.home }}</a>
       <a href="{{ _nav.resources_href }}"{{ _nav.resources_active }}>{{ nav.resources }}</a>
       <a href="{{ _nav.guidance_href }}"{{ _nav.guidance_active }}>{{ nav.guidance }}</a>
-      <a href="index.html#tarifs">{{ nav.pricing }}</a>
+      <a href="{{ _nav.home_href }}#tarifs">{{ nav.pricing }}</a>
       <a href="{{ _nav.contact_href }}"{{ _nav.contact_active }}>{{ nav.contact }}</a>
       <div class="lang-switch">
         <a href="{{ _nav.lang1_href }}" class="lang-link">{{ _nav.lang1_label }}</a>

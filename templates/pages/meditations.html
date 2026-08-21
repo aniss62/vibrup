@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="{{ _lang_html }}">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{{ pages.meditations.meta.title }}</title>
+<meta name="description" content="{{ pages.meditations.meta.description }}" />
+<link rel="alternate" hreflang="fr" href="{{ _hreflang.fr }}" />
+<link rel="alternate" hreflang="en" href="{{ _hreflang.en }}" />
+<link rel="alternate" hreflang="es" href="{{ _hreflang.es }}" />
+<link rel="alternate" hreflang="x-default" href="{{ _hreflang.x_default }}" />
+<link rel="stylesheet" href="{{ _asset_prefix }}styles.css" />
+</head>
+<body>
+
+{{ _nav_block }}
+
+<div class="wrap page-header">
+  <div class="eyebrow">{{ pages.meditations.header.eyebrow }}</div>
+  <h1>{{ pages.meditations.header.title }}</h1>
+  <p>{{ pages.meditations.header.lead }}</p>
+</div>
+
+<section style="padding-top:20px;">
+  <div class="wrap manifesto">
+    <p class="about-lead">{{ pages.meditations.manifesto.p1 }}</p>
+    <p>{{ pages.meditations.manifesto.p2 }}</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">{{ pages.meditations.steps.eyebrow }}</div>
+      <h2>{{ pages.meditations.steps.title }}</h2>
+    </div>
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="num">01</div>
+        <h3>{{ pages.meditations.steps.step1_title }}</h3>
+        <p>{{ pages.meditations.steps.step1_body }}</p>
+      </div>
+      <div class="value-card">
+        <div class="num">02</div>
+        <h3>{{ pages.meditations.steps.step2_title }}</h3>
+        <p>{{ pages.meditations.steps.step2_body }}</p>
+      </div>
+      <div class="value-card">
+        <div class="num">03</div>
+        <h3>{{ pages.meditations.steps.step3_title }}</h3>
+        <p>{{ pages.meditations.steps.step3_body }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="photo-band" style="background-image:url('{{ _asset_prefix }}images/about-slide-2-meditation.jpg')">
+      <div class="photo-band-content">
+        <div class="eyebrow">{{ pages.meditations.photo.eyebrow }}</div>
+        <p class="quote">{{ pages.meditations.photo.quote }}</p>
+        <div class="credit">{{ pages.meditations.photo.credit }}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div style="text-align:center;">
+      <a href="{{ _nav.home_href }}#pratique" class="btn-primary">{{ pages.meditations.closing.cta }}</a>
+    </div>
+  </div>
+</section>
+
+{{ _footer_block }}
+
+{{ _whatsapp_block }}
+<script src="{{ _asset_prefix }}script.js"></script>
+</body>
+</html>

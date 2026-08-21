@@ -39,12 +39,19 @@ it does, what it needs, and what it returns.
 ## About this site
 
 Static HTML/CSS/JS site (no build step, no package manager) for Vibr'Up, deployed on
-Vercel. French pages live at the root (`index.html`, `a-propos.html`, `article.html`,
+Vercel. `index.html` (site root) is the "À propos" / manifesto page — it's the main
+entry point. French pages live at the root (`index.html`, `accueil.html`, `article.html`,
 `contact.html`, `guidance.html`, `ressources.html`); English translations mirror them
-under `en/`, Spanish under `es/` (`index.html`, `acerca-de.html`, `articulo.html`,
-`contacto.html`, `guidance.html`, `recursos.html`). Shared assets: `styles.css`,
-`script.js`, `images/`. The three languages must stay structurally identical (same
-tags/attributes, only text differs) — see `blueprints/check-i18n-parity.md`.
+under `en/`, Spanish under `es/` (`index.html`, `home.html`/`inicio.html`, `article.html`/
+`articulo.html`, `contact.html`/`contacto.html`, `guidance.html`, `resources.html`/
+`recursos.html`). Shared assets: `styles.css`, `script.js`, `images/`. The three
+languages must stay structurally identical (same tags/attributes, only text differs) —
+see `blueprints/check-i18n-parity.md`.
+
+Pages are generated from `templates/pages/*.html` + `templates/partials/*.html` +
+`i18n/{fr,en,es}.py`, driven by `equipment/site_map.py` (the page-id → file-path
+registry) and rendered by `equipment/build.py`. Never hand-edit a generated HTML file —
+edit its template/i18n source and run `equipment/build.py`.
 
 See `blueprints/` for the current documented workflows (local preview, deploy,
 i18n parity check). Ask before adding new Blueprints/Equipment for workflows not yet

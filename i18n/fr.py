@@ -6,6 +6,7 @@ STRINGS = {
         "resources": "Ressources",
         "guidance": "Guidance",
         "pricing": "Tarifs",
+        "about": "À propos",
         "contact": "Contact",
     },
     "footer": {
@@ -19,6 +20,7 @@ STRINGS = {
         "start_free_cta": "Commencer gratuitement",
         "open_menu_aria": "Ouvrir le menu",
         "whatsapp_aria": "Contacter sur WhatsApp",
+        "music_aria": "Activer / couper la musique",
     },
     "person": {
         "hamann": {
@@ -49,14 +51,15 @@ STRINGS = {
             },
             "practice": {
                 "eyebrow": "la pratique",
-                "title": "Trois gestes simples, chaque jour",
-                "lead": "Pas besoin d'y passer une heure. Vibr'Up se glisse dans ta routine, quelques minutes suffisent pour observer et ajuster ton énergie.",
-                "card1_title": "Check-in quotidien",
-                "card1_body": "Note ton niveau vibratoire et ton ressenti du jour. Un geste simple qui, répété, révèle tes cycles d'énergie.",
-                "card2_title": "Méditations guidées",
-                "card2_body": "Ancrage, élévation vibratoire, alignement — des pratiques courtes pensées pour agir concrètement sur ton énergie.",
-                "card3_title": "Évolution dans le temps",
-                "card3_body": "Visualise tes tendances sur la durée pour identifier ce qui nourrit — ou draine — ton énergie.",
+                "title": "Le Laboratoire du Vivant",
+                "lead": "La théorie non incarnée n'est qu'une autre forme d'agitation qui te maintient dans le mental et te coupe de ton Centre. Accumuler des concepts et collectionner les citations inspirantes sur tes écrans est un piège de l'ego. Un Ashram n'est pas un lieu où l'on philosophe, c'est un espace où l'on s'exerce, où l'on s'effondre et où l'on se relève.",
+                "lead2": "Cette rubrique Pratique est ton laboratoire quotidien, l'antidote à la diffraction de ton attention numérique. Ici, pas de promesses magiques ni de performance : nous redescendons dans le corps, dans l'instant vertical, à travers trois piliers fondamentaux conçus pour te ramener à la Réalité :",
+                "card1_title": "Le Check-in Quotidien : Sabotage Spirituel",
+                "card1_body": "Avant le premier pixel. Une pause radicale de moins de 3 minutes pour scanner ton énergie brute et reprendre les commandes de ta conscience, avant que les algorithmes ne dictent ta vibration.",
+                "card2_title": "Les Méditations Guidées : Le Silence Subversif",
+                "card2_body": "Coupe le bruit. Retrouve l'Être. Des transmissions audio courtes et brutes — un acte de rébellion spirituelle, pas une relaxation classique.",
+                "card3_title": "Évolution dans le Temps : Le Rituel Cyclique",
+                "card3_body": "La conscience n'est pas une ligne droite. Un rituel nocturne de 3 jours pour faire la paix avec tes variations énergétiques.",
             },
             "guidance_teaser": {
                 "eyebrow": "accompagnement",
@@ -72,13 +75,12 @@ STRINGS = {
                 "featured_title": "Les affirmations positives : comment et pourquoi les utiliser",
                 "featured_desc": "Un guide simple pour reprogrammer ton dialogue intérieur, sans injonction ni pression.",
                 "featured_meta": "7 min de lecture",
-                "soon_badge": "Bientôt",
-                "card2_tag": "Méditations",
-                "card2_title": "L'ancrage : la première pierre de toute pratique énergétique",
-                "card2_desc": "Pourquoi se reconnecter au sol est souvent l'étape la plus négligée — et la plus puissante.",
+                "card2_tag": "Ancrage",
+                "card2_title": "Les Portes de l'Ashram : L'Ancrage",
+                "card2_desc": "L'ancrage n'est pas une technique de bien-être, c'est un acte de sédition spirituelle. Sept orientations quotidiennes pour ton retour au Centre.",
                 "card3_tag": "Manifestation",
-                "card3_title": "Manifester sans forcer : la nuance qui change tout",
-                "card3_desc": "La différence entre désirer avec intensité et désirer avec tension — et pourquoi elle compte.",
+                "card3_title": "La Voie de la Manifestation Sacrée",
+                "card3_desc": "Tu n'attires pas ce que tu veux, tu attires ce que tu es. Un rituel doux de 7 jours pour laisser le Divin créer à travers toi.",
                 "see_all": "Voir toutes les ressources",
             },
             "pricing": {
@@ -106,39 +108,22 @@ STRINGS = {
         "about": {
             "meta": {
                 "title": "À propos — Vibr'Up",
-                "description": "Pourquoi Vibr'Up existe : une philosophie du retour à soi, sans injonction ni dogme.",
+                "description": "L'Ashram Digital : ralentis, dépose les armes, et stabilise ta vibration la plus haute.",
             },
             "header": {
-                "eyebrow": "à propos",
-                "title": "Pourquoi Vibr'Up existe",
+                "eyebrow": "l'ashram digital",
+                "title": "Éteins la matrice. Rallume l'Être.",
             },
-            "lead": "On ne t'a jamais vraiment appris à écouter ton énergie — seulement à la subir, à l'ignorer, ou à la pousser plus loin qu'elle ne peut aller. Vibr'Up est né de l'idée simple qu'observer suffit souvent à changer les choses.",
-            "photo": {
-                "eyebrow": "une dune à la fois",
-                "quote": "On n'élève pas son énergie d'un coup. On avance dune après dune, jour après jour.",
-                "credit": "Photo — dunes du Sahara",
-            },
-            "approach": {
-                "eyebrow": "notre approche",
-                "title": "Trois convictions qui guident Vibr'Up",
-            },
-            "value1": {
-                "title": "Observer avant de changer",
-                "body": "On ne peut pas ajuster ce qu'on ne regarde pas. Le check-in quotidien n'est pas une performance à réussir, juste un miroir honnête.",
-            },
-            "value2": {
-                "title": "La régularité plutôt que l'intensité",
-                "body": "Trois minutes chaque jour transforment plus durablement qu'une heure une fois par mois. Vibr'Up est pensé pour tenir dans le temps.",
-            },
-            "value3": {
-                "title": "Un accompagnement sans dogme",
-                "body": "Pas de vérité unique à suivre. Des outils, des pistes, et un accompagnement humain pour celles et ceux qui veulent aller plus loin.",
+            "manifesto": {
+                "p1": "Tu n'es pas venu sur cette Terre pour t'agiter dans une cage de verre faite de chiffres, de pixels et de validations virtuelles. Le monde digital moderne a totalement dévoyé ton attention. Il te fragmente, te vide de ton énergie et t'impose une productivité linéaire épuisante qui étouffe ton âme.",
+                "p2": "Je connais cette course effrénée, je l'ai courue moi aussi. Jusqu'à ce que mes propres effondrements et deux expériences profondes de dissolution du moi fassent voler en éclats mes masques sociaux.",
+                "quote_lead": "Dans ce dépouillement intime, j'ai compris une loi absolue :",
+                "quote": "Tu n'attires pas ce que tu veux, tu attires ce que tu es.",
+                "p3": "Bienvenue sur Vibr'Up / L'Ashram Digital. Ce lieu n'est pas un espace de fuite ni un site de bien-être superficiel. C'est un laboratoire du Vivant. Une main tendue pour t'apprendre à ralentir, à déposer les armes et à laisser mourir ce qui est faux en toi. Viens nettoyer le miroir de ton esprit, embrasser tes parts d'ombre avec tendresse, et stabiliser une vibration haute, par une pratique régulière.",
+                "closing": "Il est temps de cesser de supplier l'univers pour incarner enfin ta version divine.",
             },
             "now": {
-                "eyebrow": "et maintenant ?",
-                "title": "Commence là où tu es, aujourd'hui",
-                "lead": "Pas besoin d'être prêt·e ou certain·e de quoi que ce soit. Un premier check-in suffit pour démarrer.",
-                "cta": "Découvrir la pratique",
+                "cta": "Commencer la pratique",
             },
         },
         "article": {
@@ -262,6 +247,226 @@ STRINGS = {
             },
             "cta": "Réserver ma séance",
         },
+        "meditations": {
+            "meta": {
+                "title": "Les Méditations Guidées — Vibr'Up",
+                "description": "Le silence subversif : des transmissions audio courtes et brutes, pensées comme un acte de rébellion spirituelle.",
+            },
+            "header": {
+                "eyebrow": "méditations guidées",
+                "title": "Le silence subversif",
+                "lead": "Coupe le bruit. Retrouve l'Être.",
+            },
+            "manifesto": {
+                "p1": "L'espace virtuel est devenu une machine de guerre conçue pour fragmenter ton attention. Jour après jour, les écrans aspirent ton énergie, te laissant morcelé et éparpillé en une multitude d'identités virtuelles. Tu cours après des chimères de pixels et une validation artificielle, en oubliant la plénitude originelle qui t'habite.",
+                "p2": "Les Méditations Guidées de l'Ashram Digital ne sont pas des audios de relaxation classiques pour t'endormir. Ce sont des transmissions courtes, brutes et habitées, conçues comme un acte de rébellion spirituelle.",
+            },
+            "steps": {
+                "eyebrow": "ce que tu viens chercher",
+                "title": "En moins de 10 minutes, ces partages audios te prennent par la main pour :",
+                "step1_title": "S'extraire de la matrice",
+                "step1_body": "Briser l'hypnose des flux d'informations et couper instantanément la haute tension nerveuse.",
+                "step2_title": "Enlacer ton Ombre",
+                "step2_body": "Accueillir tes baisses d'énergie, tes frustrations et ton anxiété avec une immense tendresse, sans chercher à les fuir.",
+                "step3_title": "Habiter le Témoin",
+                "step3_body": "Glisser sous le tumulte de tes pensées pour redécouvrir cet espace vide, lumineux et parfaitement immobile qui est ta véritable nature.",
+            },
+            "photo": {
+                "eyebrow": "présence",
+                "quote": "Viens t'asseoir, éteins les simulations et laisse-toi porter par l'océan de la Présence.",
+                "credit": "Photo — méditation, lever du jour",
+            },
+            "closing": {
+                "cta": "Commencer la pratique",
+            },
+        },
+        "checkin": {
+            "meta": {
+                "title": "Le Check-in Quotidien — Vibr'Up",
+                "description": "Avant le premier pixel : une pause radicale de moins de 3 minutes, un acte de sabotage spirituel contre le réveil sous automatisme.",
+            },
+            "header": {
+                "eyebrow": "check-in quotidien",
+                "title": "Avant le premier pixel.",
+            },
+            "manifesto": {
+                "p1": "Chaque matin, avant même que tes yeux ne soient totalement éveillés, la matrice tend ses pièges. Ton bras s'allonge machinalement vers ton téléphone. En ouvrant tes applications, tu laisses les notifications, les urgences des autres et le bruit du monde saturer ton espace intérieur. Ton ego se branche instantanément sur une fréquence sous haute tension, te coupant de ton Centre. Tu commences ta journée fragmenté, en état de fuite énergétique permanente.",
+                "p2": "Le Check-in Quotidien est un acte de sabotage spirituel contre cet automatisme.",
+            },
+            "steps": {
+                "eyebrow": "moins de 3 minutes",
+                "title": "Un rendez-vous intime avec ta vérité du moment, juste après le réveil",
+                "lead": "Il ne s'agit pas d'une technique de bien-être complexe, mais d'une pause radicale de moins de 3 minutes.",
+                "step1_title": "Scanner l'énergie brute",
+                "step1_body": "Apprendre à ressentir ton corps et la météo de ton esprit sans poser de jugements ou d'étiquettes.",
+                "step2_title": "Éveiller le Témoin",
+                "step2_body": "T'installer dans cet espace vaste et immobile en toi qui observe la fatigue ou l'agitation sans se laisser submerger.",
+                "step3_title": "Verrouiller les fuites",
+                "step3_body": "Sceller ton alignement pour traverser le monde numérique sans y perdre ton âme ou ton enthousiasme.",
+            },
+            "photo": {
+                "eyebrow": "le réveil",
+                "quote": "Ne laisse plus les algorithmes dicter ta vibration dès le réveil. Reprends les commandes de ta conscience.",
+                "credit": "Photo — lever du soleil sur les dunes",
+            },
+            "closing": {
+                "cta": "Faire mon check-in",
+            },
+        },
+        "evolution": {
+            "meta": {
+                "title": "Évolution dans le Temps — Vibr'Up",
+                "description": "Le rituel cyclique : un rituel nocturne de 3 jours pour faire la paix avec tes variations énergétiques.",
+            },
+            "header": {
+                "eyebrow": "évolution dans le temps",
+                "title": "La conscience n'est pas une ligne droite.",
+            },
+            "manifesto": {
+                "p1": "La matrice moderne t'impose une productivité linéaire épuisante. Elle exige que tu sois performant chaque jour, au même rythme, comme une machine. C'est un mensonge destructeur. À force de nier tes rythmes, tu satures ton système nerveux et tu t'éparpilles dans l'illusion de l'ego de surface.",
+                "p2": "L'Évolution dans le Temps est une invitation à cartographier tes mouvements intérieurs et à faire la paix avec tes variations énergétiques.",
+            },
+            "steps": {
+                "eyebrow": "rituel nocturne de 3 jours",
+                "title": "5 à 10 minutes maximum avant de t'endormir",
+                "lead": "Tu vas apprendre à transformer ta fatigue en sol sacré de régénération.",
+                "step1_title": "Jour 1 — La Décharge de l'Ombre",
+                "step1_body": "Regarder avec humour tes dérives numériques du jour pour désarmer instantanément la tension nerveuse et revenir au silence immobile.",
+                "step2_title": "Jour 2 — L'Alchimie du Cœur",
+                "step2_body": "Poser les mains sur ta poitrine pour transmuter la contraction des notifications en une expansion baignée par la tendresse.",
+                "step3_title": "Jour 3 — La Dissolution Totale",
+                "step3_body": "Lâcher ton profil social, tes statistiques et tes masques pour sombrer dans le sommeil en réalisant que tu es la Conscience Unique.",
+            },
+            "photo": {
+                "eyebrow": "chevaucher la vague",
+                "quote": "Ne subis plus tes baisses de régime comme des échecs. Apprends à chevaucher la vague de tes cycles pour te réveiller chaque matin pleinement enthousiaste et habité par le Divin.",
+                "credit": "Photo — cycle des phases lunaires",
+            },
+            "closing": {
+                "cta": "Commencer le rituel",
+            },
+        },
+        "manifestation": {
+            "meta": {
+                "title": "La Voie de la Manifestation Sacrée — Vibr'Up",
+                "description": "Tu n'attires pas ce que tu veux, tu attires ce que tu es. Un rituel doux de 7 jours pour laisser le Divin créer à travers toi.",
+            },
+            "header": {
+                "eyebrow": "manifestation",
+                "title": "La Voie de la Manifestation Sacrée",
+            },
+            "manifesto": {
+                "p1": "Le monde moderne a totalement dévoyé le secret de la création. On te vend des formules agressives pour « manifester » de l'argent, du succès ou des biens matériels en utilisant la force brute de ton ego et les crispations de ton mental. C'est une illusion épuisante. Cette attraction-là naît du manque, de la peur et de la séparation. Elle ne fait que renforcer la prison de verre numérique dans laquelle tu t'agites chaque jour.",
+                "p2": "Dans ma propre traversée, au plus profond de mes effondrements, mes deux expériences de dissolution du moi ont fait voler en éclats cette vision mercantile.",
+                "p3": "La véritable manifestation n'est pas une tension vers l'extérieur ou une manipulation du monde. Elle est une émanation tranquille depuis ton Centre.",
+                "p4": "Lorsque le personnage social s'apaise et s'efface, le tumulte laisse place à un espace de plénitude totale qui est déjà parfait et complet. C'est depuis cette posture de témoin silencieux que la réalité se réaligne. Ce qui habite réellement ton cœur — tes désirs les plus purs, ta joie innée — se déploie alors naturellement dans ta vie, sans effort, comme le prolongement sacré de ta propre conscience.",
+            },
+            "quote": {
+                "lead": "Dans ce grand dépouillement intime, j'ai compris une loi absolue :",
+                "text": "Tu n'attires pas ce que tu veux, tu attires ce que tu es.",
+            },
+            "steps": {
+                "eyebrow": "rituel doux de 7 jours",
+                "title": "Moins de trois minutes, matin ou soir",
+                "lead": "Ce parcours te prend par la main à travers des étapes fondamentales :",
+                "step1_title": "Le nettoyage du réflecteur",
+                "step1_body": "Purifier le miroir de ton esprit saturé d'écrans pour cesser de manifester le chaos.",
+                "step2_title": "Démasquer l'intrus",
+                "step2_body": "Regarder ton personnage s'agiter autour des pixels et de la validation pour libérer l'énergie bloquée.",
+                "step3_title": "L'élargissement du cœur",
+                "step3_body": "Sortir de la contraction pour laisser tes élans les plus purs infuser ta réalité extérieure.",
+                "step4_title": "Le sacrifice de l'attente",
+                "step4_body": "Abandonner le contrôle du personnage pour confier humblement tes désirs au Divin.",
+                "step5_title": "Dissoudre la peur du manque",
+                "step5_body": "Accueillir tes doutes avec tendresse pour les transmuter instantanément en force de vie.",
+            },
+            "photo": {
+                "eyebrow": "aligne-toi",
+                "quote": "Viens cesser de supplier l'univers. Apprends à t'aligner sur la Réalité profonde et laisse le Divin créer à travers toi.",
+                "credit": "Photo — voie lactée sur désert rocheux",
+            },
+            "closing": {
+                "cta": "Commencer le rituel des 7 jours",
+            },
+        },
+        "cycles": {
+            "meta": {
+                "title": "Cartographier ses Cycles Énergétiques — Vibr'Up",
+                "description": "Un voyage d'auto-évaluation de 21 jours pour cartographier tes mouvements intérieurs et faire la paix avec tes cycles.",
+            },
+            "header": {
+                "eyebrow": "cycles énergétiques",
+                "title": "Cartographier ses Cycles Énergétiques",
+            },
+            "manifesto": {
+                "p1": "La productivité linéaire est un mythe épuisant inventé par la matrice moderne. On t'oblige à performer sans relâche, à maintenir un niveau d'expansion permanent derrière tes écrans, au mépris total de tes rythmes biologiques et de ton écologie intérieure. C'est une illusion destructrice qui sature ton système nerveux et t'éloigne de ta véritable nature.",
+                "p2": "Pendant des années, j'ai moi aussi cru à cette cadence forcée, jusqu'à ce que mes propres effondrements et la traversée douloureuse des illusions de l'ego viennent tout briser. Dans ce dépouillement, j'ai découvert que l'énergie humaine n'est pas une ligne droite, mais un flux sacré de vagues successives : des temps de contraction nécessaires et des moments d'expansion naturelle.",
+            },
+            "quote": {
+                "text": "En luttant contre ces cycles, tu t'épuises. En apprenant à les écouter, tu retrouves l'enthousiasme véritable — ce sens originel d'être pleinement habité par le Divin.",
+            },
+            "steps": {
+                "eyebrow": "voyage de 21 jours",
+                "title": "Un chemin de retour vers ton Centre",
+                "lead": "Des micro-exercices quotidiens de check-up et des conseils d'écoute du cœur, loin des outils de performance froide.",
+                "step1_title": "Éveiller le Témoin",
+                "step1_body": "S'asseoir face à l'écran éteint, observer l'impulsion et s'installer dans l'espace immobile juste derrière l'agitation du mental.",
+                "step2_title": "Accueillir la contraction et l'Ombre",
+                "step2_body": "Cesser de culpabiliser face aux applications compulsives ou à la fatigue, en les traitant comme des invités sacrés venus purifier ton intention.",
+                "step3_title": "L'ancrage et la clarté",
+                "step3_body": "Poser les pieds sur le sol pour briser la dispersion électrique du nuage numérique et retrouver la paix au milieu de la tempête des notifications.",
+                "step4_title": "L'unification finale",
+                "step4_body": "Embrasser la lumière et la fatigue comme deux expressions complémentaires d'une seule et même Conscience.",
+            },
+            "photo": {
+                "eyebrow": "observer sans juger",
+                "quote": "Ne subis plus tes états d'âme. Apprends à observer tes fluctuations sans les juger pour devenir le témoin stable, aligné et habité par la joie pure de ton être.",
+                "credit": "Photo — cycle des phases lunaires",
+            },
+            "closing": {
+                "cta": "Commencer le voyage de 21 jours",
+            },
+        },
+        "grounding": {
+            "meta": {
+                "title": "Les Portes de l'Ashram : L'Ancrage — Vibr'Up",
+                "description": "L'ancrage n'est pas une technique de bien-être, c'est un acte de sédition spirituelle. Sept orientations quotidiennes pour ton retour au Centre.",
+            },
+            "header": {
+                "eyebrow": "ancrage",
+                "title": "Les Portes de l'Ashram : L'Ancrage",
+            },
+            "manifesto": {
+                "p1": "Le monde digital n'est pas une simple évolution technologique ; c'est une force métaphysique de déracinement. En projetant ton attention de lien en lien, d'image en image, ta conscience subit une diffraction permanente. L'intellect calculateur prend le contrôle, le personnage superficiel de ton ego s'hypertrophie, et le lien avec ton Soi véritable se rompt. Ce que la société moderne nomme paresseusement « anxiété » ou « burn-out » n'est rien d'autre que le cri de ton âme qui étouffe sous le poids des masques sociaux.",
+                "p2": "Un Ashram n'est pas un lieu de fuite, c'est un laboratoire de la Réalité. Ayant traversé deux expériences profondes de dissolution du moi, j'ai acquis la certitude absolue que le temps est une fiction et que la séparation est une totale illusion.",
+            },
+            "quote": {
+                "text": "L'ancrage que je te propose ici n'est pas une technique de bien-être superficielle pour « aller mieux ». C'est un acte de sédition spirituelle. C'est l'arrêt complet du bavardage mental pour laisser enfin place au Témoin immobile.",
+            },
+            "steps": {
+                "eyebrow": "sept orientations quotidiennes",
+                "title": "Pas à pas vers ton retour au Centre",
+                "lead": "Ne les pratique pas pour réussir ou performer, mais pour laisser mourir ce qui est faux en toi.",
+                "step1_title": "La retraite du silence",
+                "step1_body": "Regarder passer tes pensées comme des nuages, en réalisant que tu n'es pas le bruit du monde, mais l'espace conscient qui l'accueille.",
+                "step2_title": "Le face-à-face avec ton Ombre",
+                "step2_body": "Embrasser la fatigue et les frustrations accumulées devant les écrans avec un sourire de compassion pour dissoudre le mirage.",
+                "step3_title": "L'abandon à la Source",
+                "step3_body": "Passer de la contraction de la peur à l'expansion de la Grâce en offrant tes doutes à l'Unique.",
+                "step4_title": "La clarté du miroir",
+                "step4_body": "À l'image des enfants autistes que j'accompagne au quotidien, apprendre à lire l'énergie brute sans tricher avec le paraître, pour retrouver ton authenticité native.",
+                "step5_title": "L'immensité du désert",
+                "step5_body": "Visualiser l'horizon infini du Sahara où le mental n'a nulle part où se cacher, faisant s'évaporer l'angoisse dans un présent vertical.",
+            },
+            "photo": {
+                "eyebrow": "ta demeure éternelle",
+                "quote": "Viens verrouiller tes fuites énergétiques. Installe-toi dans ta demeure éternelle et réalise que tu es entier, ici et maintenant.",
+                "credit": "Photo — pieds ancrés dans le sable",
+            },
+            "closing": {
+                "cta": "Franchir les portes de l'ashram",
+            },
+        },
         "resources": {
             "meta": {
                 "title": "Ressources — Vibr'Up",
@@ -286,41 +491,25 @@ STRINGS = {
                 "desc": "Un guide simple pour reprogrammer ton dialogue intérieur, sans injonction ni pression.",
                 "meta": "7 min de lecture",
             },
-            "soon_badge": "Bientôt disponible",
             "article_grounding": {
                 "tag": "Ancrage",
-                "title": "L'ancrage : la première pierre de toute pratique énergétique",
-                "desc": "Pourquoi se reconnecter au sol est souvent l'étape la plus négligée — et la plus puissante.",
+                "title": "Les Portes de l'Ashram : L'Ancrage",
+                "desc": "L'ancrage n'est pas une technique de bien-être, c'est un acte de sédition spirituelle. Sept orientations quotidiennes pour ton retour au Centre.",
             },
             "article_manifestation": {
                 "tag": "Manifestation",
-                "title": "Manifester sans forcer : la nuance qui change tout",
-                "desc": "La différence entre désirer avec intensité et désirer avec tension — et pourquoi elle compte.",
+                "title": "La Voie de la Manifestation Sacrée",
+                "desc": "Tu n'attires pas ce que tu veux, tu attires ce que tu es. Un rituel doux de 7 jours pour laisser le Divin créer à travers toi.",
             },
             "article_cycles": {
                 "tag": "Cycles énergétiques",
-                "title": "Comprendre tes cycles énergétiques sur un mois",
-                "desc": "Ce que ton historique de check-in peut révéler quand tu prends le temps de le relire.",
+                "title": "Cartographier ses Cycles Énergétiques",
+                "desc": "L'énergie humaine n'est pas une ligne droite, mais un flux de vagues. Un voyage d'auto-évaluation de 21 jours pour cartographier tes mouvements intérieurs.",
             },
             "article_5min": {
                 "tag": "Méditations",
-                "title": "5 minutes pour recentrer ta journée",
-                "desc": "Une pratique courte à glisser entre deux rendez-vous, quand tout s'accélère autour de toi.",
-            },
-            "article_energy_drop": {
-                "tag": "Vibration",
-                "title": "Pourquoi ton énergie baisse en fin de journée",
-                "desc": "Trois causes fréquentes de fatigue vibratoire, et comment commencer à les repérer.",
-            },
-            "article_evening_ritual": {
-                "tag": "Ancrage",
-                "title": "Créer un rituel du soir simple et durable",
-                "desc": "Pas besoin de bougies ni de trente minutes : trois gestes suffisent pour clore la journée.",
-            },
-            "article_resonance": {
-                "tag": "Manifestation",
-                "title": "La loi de résonance, expliquée simplement",
-                "desc": "Une manière plus douce et plus juste de comprendre ce qu'on appelle parfois \"loi d'attraction\".",
+                "title": "Les Méditations Guidées : Le Silence Subversif",
+                "desc": "Coupe le bruit. Retrouve l'Être. Des transmissions audio courtes et brutes — un acte de rébellion spirituelle, pas une relaxation classique.",
             },
             "newsletter": {
                 "title": "20 affirmations pour élever ta vibration",

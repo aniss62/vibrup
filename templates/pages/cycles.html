@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="{{ _lang_html }}">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{{ pages.cycles.meta.title }}</title>
+<meta name="description" content="{{ pages.cycles.meta.description }}" />
+<link rel="alternate" hreflang="fr" href="{{ _hreflang.fr }}" />
+<link rel="alternate" hreflang="en" href="{{ _hreflang.en }}" />
+<link rel="alternate" hreflang="es" href="{{ _hreflang.es }}" />
+<link rel="alternate" hreflang="x-default" href="{{ _hreflang.x_default }}" />
+<link rel="stylesheet" href="{{ _asset_prefix }}styles.css" />
+</head>
+<body>
+
+{{ _nav_block }}
+
+<div class="wrap page-header">
+  <div class="eyebrow">{{ pages.cycles.header.eyebrow }}</div>
+  <h1>{{ pages.cycles.header.title }}</h1>
+</div>
+
+<section style="padding-top:20px;">
+  <div class="wrap manifesto">
+    <p class="about-lead">{{ pages.cycles.manifesto.p1 }}</p>
+    <p>{{ pages.cycles.manifesto.p2 }}</p>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="manifesto-quote">
+      <p class="quote">{{ pages.cycles.quote.text }}</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">{{ pages.cycles.steps.eyebrow }}</div>
+      <h2>{{ pages.cycles.steps.title }}</h2>
+      <p>{{ pages.cycles.steps.lead }}</p>
+    </div>
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="num">01</div>
+        <h3>{{ pages.cycles.steps.step1_title }}</h3>
+        <p>{{ pages.cycles.steps.step1_body }}</p>
+      </div>
+      <div class="value-card">
+        <div class="num">02</div>
+        <h3>{{ pages.cycles.steps.step2_title }}</h3>
+        <p>{{ pages.cycles.steps.step2_body }}</p>
+      </div>
+      <div class="value-card">
+        <div class="num">03</div>
+        <h3>{{ pages.cycles.steps.step3_title }}</h3>
+        <p>{{ pages.cycles.steps.step3_body }}</p>
+      </div>
+      <div class="value-card">
+        <div class="num">04</div>
+        <h3>{{ pages.cycles.steps.step4_title }}</h3>
+        <p>{{ pages.cycles.steps.step4_body }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="photo-band" style="background-image:url('{{ _asset_prefix }}images/resources-cycles.jpg')">
+      <div class="photo-band-content">
+        <div class="eyebrow">{{ pages.cycles.photo.eyebrow }}</div>
+        <p class="quote">{{ pages.cycles.photo.quote }}</p>
+        <div class="credit">{{ pages.cycles.photo.credit }}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div style="text-align:center;">
+      <a href="{{ _nav.home_href }}#pratique" class="btn-primary">{{ pages.cycles.closing.cta }}</a>
+    </div>
+  </div>
+</section>
+
+{{ _footer_block }}
+
+{{ _whatsapp_block }}
+<script src="{{ _asset_prefix }}script.js"></script>
+</body>
+</html>

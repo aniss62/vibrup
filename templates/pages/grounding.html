@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="{{ _lang_html }}">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{{ pages.grounding.meta.title }}</title>
+<meta name="description" content="{{ pages.grounding.meta.description }}" />
+<link rel="alternate" hreflang="fr" href="{{ _hreflang.fr }}" />
+<link rel="alternate" hreflang="en" href="{{ _hreflang.en }}" />
+<link rel="alternate" hreflang="es" href="{{ _hreflang.es }}" />
+<link rel="alternate" hreflang="x-default" href="{{ _hreflang.x_default }}" />
+<link rel="stylesheet" href="{{ _asset_prefix }}styles.css" />
+</head>
+<body>
+
+{{ _nav_block }}
+
+<div class="wrap page-header">
+  <div class="eyebrow">{{ pages.grounding.header.eyebrow }}</div>
+  <h1>{{ pages.grounding.header.title }}</h1>
+</div>
+
+<section style="padding-top:20px;">
+  <div class="wrap manifesto">
+    <p class="about-lead">{{ pages.grounding.manifesto.p1 }}</p>
+    <p>{{ pages.grounding.manifesto.p2 }}</p>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="manifesto-quote">
+      <p class="quote">{{ pages.grounding.quote.text }}</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">{{ pages.grounding.steps.eyebrow }}</div>
+      <h2>{{ pages.grounding.steps.title }}</h2>
+      <p>{{ pages.grounding.steps.lead }}</p>
+    </div>
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="num">01</div>
+        <h3>{{ pages.grounding.steps.step1_title }}</h3>
+        <p>{{ pages.grounding.steps.step1_body }}</p>
+      </div>
+      <div class="value-card">
+        <div class="num">02</div>
+        <h3>{{ pages.grounding.steps.step2_title }}</h3>
+        <p>{{ pages.grounding.steps.step2_body }}</p>
+      </div>
+      <div class="value-card">
+        <div class="num">03</div>
+        <h3>{{ pages.grounding.steps.step3_title }}</h3>
+        <p>{{ pages.grounding.steps.step3_body }}</p>
+      </div>
+      <div class="value-card">
+        <div class="num">04</div>
+        <h3>{{ pages.grounding.steps.step4_title }}</h3>
+        <p>{{ pages.grounding.steps.step4_body }}</p>
+      </div>
+      <div class="value-card">
+        <div class="num">05</div>
+        <h3>{{ pages.grounding.steps.step5_title }}</h3>
+        <p>{{ pages.grounding.steps.step5_body }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="photo-band" style="background-image:url('{{ _asset_prefix }}images/resources-grounding.jpg')">
+      <div class="photo-band-content">
+        <div class="eyebrow">{{ pages.grounding.photo.eyebrow }}</div>
+        <p class="quote">{{ pages.grounding.photo.quote }}</p>
+        <div class="credit">{{ pages.grounding.photo.credit }}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div style="text-align:center;">
+      <a href="{{ _nav.home_href }}#pratique" class="btn-primary">{{ pages.grounding.closing.cta }}</a>
+    </div>
+  </div>
+</section>
+
+{{ _footer_block }}
+
+{{ _whatsapp_block }}
+<script src="{{ _asset_prefix }}script.js"></script>
+</body>
+</html>

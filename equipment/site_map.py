@@ -11,11 +11,11 @@ LANGS = ("fr", "en", "es")
 PAGES = {
     "home": {
         "template": "home.html", "nav_id": "home",
-        "fr": "index.html", "en": "en/index.html", "es": "es/index.html",
+        "fr": "accueil.html", "en": "en/home.html", "es": "es/inicio.html",
     },
     "about": {
-        "template": "about.html", "nav_id": None,
-        "fr": "a-propos.html", "en": "en/about.html", "es": "es/acerca-de.html",
+        "template": "about.html", "nav_id": "about",
+        "fr": "index.html", "en": "en/index.html", "es": "es/index.html",
     },
     "article": {
         "template": "article.html", "nav_id": "resources",
@@ -28,6 +28,30 @@ PAGES = {
     "guidance": {
         "template": "guidance.html", "nav_id": "guidance",
         "fr": "guidance.html", "en": "en/guidance.html", "es": "es/guidance.html",
+    },
+    "meditations": {
+        "template": "meditations.html", "nav_id": "resources",
+        "fr": "meditations.html", "en": "en/meditations.html", "es": "es/meditaciones.html",
+    },
+    "checkin": {
+        "template": "checkin.html", "nav_id": "home",
+        "fr": "check-in.html", "en": "en/check-in.html", "es": "es/check-in.html",
+    },
+    "evolution": {
+        "template": "evolution.html", "nav_id": "home",
+        "fr": "evolution.html", "en": "en/evolution.html", "es": "es/evolucion.html",
+    },
+    "manifestation": {
+        "template": "manifestation.html", "nav_id": "resources",
+        "fr": "manifestation.html", "en": "en/manifestation.html", "es": "es/manifestacion.html",
+    },
+    "cycles": {
+        "template": "cycles.html", "nav_id": "resources",
+        "fr": "cycles.html", "en": "en/cycles.html", "es": "es/ciclos.html",
+    },
+    "grounding": {
+        "template": "grounding.html", "nav_id": "resources",
+        "fr": "ancrage.html", "en": "en/grounding.html", "es": "es/anclaje.html",
     },
     "resources": {
         "template": "resources.html", "nav_id": "resources",

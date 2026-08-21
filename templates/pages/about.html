@@ -15,64 +15,44 @@
 
 {{ _nav_block }}
 
+<div class="hero-slider" role="img" aria-label="{{ pages.about.header.title }}">
+  <div class="hero-slide" style="background-image:url('{{ _asset_prefix }}images/about-slide-1-dunes.jpg')"></div>
+  <div class="hero-slide" style="background-image:url('{{ _asset_prefix }}images/about-slide-2-meditation.jpg')"></div>
+  <div class="hero-slide" style="background-image:url('{{ _asset_prefix }}images/about-slide-3-earth.jpg')"></div>
+</div>
+
 <div class="wrap page-header">
   <div class="eyebrow">{{ pages.about.header.eyebrow }}</div>
   <h1>{{ pages.about.header.title }}</h1>
 </div>
 
 <section style="padding-top:20px;">
-  <div class="wrap">
-    <p class="about-lead">{{ pages.about.lead }}</p>
+  <div class="wrap manifesto">
+    <p class="about-lead">{{ pages.about.manifesto.p1 }}</p>
+    <p>{{ pages.about.manifesto.p2 }}</p>
   </div>
 </section>
 
 <section style="padding-top:0;">
   <div class="wrap">
-    <div class="photo-band" style="background-image:url('https://images.unsplash.com/photo-1550929834-9c4435d59a1f?auto=format&fit=crop&w=1800&q=80')">
-      <div class="photo-band-content">
-        <div class="eyebrow">{{ pages.about.photo.eyebrow }}</div>
-        <p class="quote">{{ pages.about.photo.quote }}</p>
-        <div class="credit">{{ pages.about.photo.credit }}</div>
-      </div>
+    <div class="manifesto-quote">
+      <div class="eyebrow">{{ pages.about.manifesto.quote_lead }}</div>
+      <p class="quote">{{ pages.about.manifesto.quote }}</p>
     </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap manifesto">
+    <p>{{ pages.about.manifesto.p3 }}</p>
+    <p class="manifesto-closing">{{ pages.about.manifesto.closing }}</p>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">{{ pages.about.approach.eyebrow }}</div>
-      <h2>{{ pages.about.approach.title }}</h2>
-    </div>
-    <div class="values-grid">
-      <div class="value-card">
-        <div class="num">01</div>
-        <h3>{{ pages.about.value1.title }}</h3>
-        <p>{{ pages.about.value1.body }}</p>
-      </div>
-      <div class="value-card">
-        <div class="num">02</div>
-        <h3>{{ pages.about.value2.title }}</h3>
-        <p>{{ pages.about.value2.body }}</p>
-      </div>
-      <div class="value-card">
-        <div class="num">03</div>
-        <h3>{{ pages.about.value3.title }}</h3>
-        <p>{{ pages.about.value3.body }}</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="section-head center">
-      <div class="eyebrow">{{ pages.about.now.eyebrow }}</div>
-      <h2>{{ pages.about.now.title }}</h2>
-      <p>{{ pages.about.now.lead }}</p>
-    </div>
     <div style="text-align:center;">
-      <a href="index.html#pratique" class="btn-primary">{{ pages.about.now.cta }}</a>
+      <a href="{{ _nav.home_href }}#pratique" class="btn-primary">{{ pages.about.now.cta }}</a>
     </div>
   </div>
 </section>

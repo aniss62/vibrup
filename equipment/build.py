@@ -58,9 +58,9 @@ def asset_prefix(lang):
 def build_nav_context(page_id, lang):
     active_id = PAGES[page_id]["nav_id"]
     ctx = {}
-    for nav_id in ("resources", "guidance", "contact", "article"):
+    for nav_id in ("home", "resources", "guidance", "contact", "article", "about", "meditations", "checkin", "evolution", "manifestation", "cycles", "grounding"):
         ctx[f"{nav_id}_href"] = nav_href(lang, nav_id)
-    for nav_id in ("home", "resources", "guidance", "contact"):
+    for nav_id in ("home", "resources", "guidance", "contact", "about"):
         ctx[f"{nav_id}_active"] = ' class="active"' if active_id == nav_id else ""
 
     labels = {"fr": "FR", "en": "EN", "es": "ES"}
