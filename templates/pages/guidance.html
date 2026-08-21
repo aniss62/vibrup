@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="{{ _lang_html }}">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{{ pages.guidance.meta.title }}</title>
+<meta name="description" content="{{ pages.guidance.meta.description }}" />
+<link rel="alternate" hreflang="fr" href="{{ _hreflang.fr }}" />
+<link rel="alternate" hreflang="en" href="{{ _hreflang.en }}" />
+<link rel="alternate" hreflang="es" href="{{ _hreflang.es }}" />
+<link rel="alternate" hreflang="x-default" href="{{ _hreflang.x_default }}" />
+<link rel="stylesheet" href="{{ _asset_prefix }}styles.css" />
+</head>
+<body>
+
+{{ _nav_block }}
+
+<div class="wrap page-header">
+  <div class="eyebrow">{{ pages.guidance.header.eyebrow }}</div>
+  <h1>{{ pages.guidance.header.title }}</h1>
+  <p>{{ pages.guidance.header.lead }}</p>
+</div>
+
+<section>
+  <div class="wrap">
+    {{ _hamann_bio_block }}
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="photo-band" style="background-image:url('https://images.unsplash.com/photo-1769537145747-ff380b863f49?auto=format&fit=crop&w=1800&q=80')">
+      <div class="photo-band-content">
+        <div class="eyebrow">{{ pages.guidance.photo.eyebrow }}</div>
+        <p class="quote">{{ pages.guidance.photo.quote }}</p>
+        <div class="credit">{{ pages.guidance.photo.credit }}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">{{ pages.guidance.how.eyebrow }}</div>
+      <h2>{{ pages.guidance.how.title }}</h2>
+    </div>
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="num">01</div>
+        <h3>{{ pages.guidance.how.step1_title }}</h3>
+        <p>{{ pages.guidance.how.step1_body }}</p>
+      </div>
+      <div class="value-card">
+        <div class="num">02</div>
+        <h3>{{ pages.guidance.how.step2_title }}</h3>
+        <p>{{ pages.guidance.how.step2_body }}</p>
+      </div>
+      <div class="value-card">
+        <div class="num">03</div>
+        <h3>{{ pages.guidance.how.step3_title }}</h3>
+        <p>{{ pages.guidance.how.step3_body }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">{{ pages.guidance.faq.eyebrow }}</div>
+      <h2>{{ pages.guidance.faq.title }}</h2>
+    </div>
+    <div class="faq-item">
+      <h3>{{ pages.guidance.faq.q1_title }}</h3>
+      <p>{{ pages.guidance.faq.q1_body }}</p>
+    </div>
+    <div class="faq-item">
+      <h3>{{ pages.guidance.faq.q2_title }}</h3>
+      <p>{{ pages.guidance.faq.q2_body }}</p>
+    </div>
+    <div class="faq-item">
+      <h3>{{ pages.guidance.faq.q3_title }}</h3>
+      <p>{{ pages.guidance.faq.q3_body }}</p>
+    </div>
+    <div class="faq-item">
+      <h3>{{ pages.guidance.faq.q4_title }}</h3>
+      <p>{{ pages.guidance.faq.q4_body }}</p>
+    </div>
+  </div>
+</section>
+
+{{ _footer_block }}
+
+{{ _whatsapp_block }}
+<script src="{{ _asset_prefix }}script.js"></script>
+</body>
+</html>
