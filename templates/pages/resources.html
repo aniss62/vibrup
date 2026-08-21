@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="{{ _lang_html }}">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{{ pages.resources.meta.title }}</title>
+<meta name="description" content="{{ pages.resources.meta.description }}" />
+<link rel="alternate" hreflang="fr" href="{{ _hreflang.fr }}" />
+<link rel="alternate" hreflang="en" href="{{ _hreflang.en }}" />
+<link rel="alternate" hreflang="es" href="{{ _hreflang.es }}" />
+<link rel="alternate" hreflang="x-default" href="{{ _hreflang.x_default }}" />
+<link rel="stylesheet" href="{{ _asset_prefix }}styles.css" />
+</head>
+<body>
+
+{{ _nav_block }}
+
+<section class="hero" style="padding-bottom:20px;">
+  <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1550929834-9c4435d59a1f?auto=format&fit=crop&w=1800&q=80'); opacity:0.14;"></div>
+  <div class="wrap page-header" style="padding-top:0;">
+    <div class="eyebrow">{{ pages.resources.header.eyebrow }}</div>
+    <h1>{{ pages.resources.header.title }}</h1>
+    <p>{{ pages.resources.header.lead }}</p>
+  </div>
+</section>
+
+<section style="padding-top:20px;">
+  <div class="wrap">
+    <div class="filters">
+      <button class="filter-pill active" data-filter="toutes">{{ pages.resources.filters.all }}</button>
+      <button class="filter-pill" data-filter="vibration">{{ pages.resources.filters.vibration }}</button>
+      <button class="filter-pill" data-filter="meditations">{{ pages.resources.filters.meditations }}</button>
+      <button class="filter-pill" data-filter="manifestation">{{ pages.resources.filters.manifestation }}</button>
+      <button class="filter-pill" data-filter="ancrage">{{ pages.resources.filters.grounding }}</button>
+      <button class="filter-pill" data-filter="cycles">{{ pages.resources.filters.cycles }}</button>
+    </div>
+
+    <div class="article-grid">
+      <a class="article-card link" data-category="vibration" href="{{ _nav.article_href }}">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1622489968558-9bf6f30dcb2a?auto=format&fit=crop&w=800&q=80')"></div>
+        <div class="body">
+          <div class="tag">{{ pages.resources.featured.tag }}</div>
+          <h3>{{ pages.resources.featured.title }}</h3>
+          <p>{{ pages.resources.featured.desc }}</p>
+          <div class="meta">{{ pages.resources.featured.meta }}</div>
+        </div>
+      </a>
+
+      <div class="article-card soon" data-category="ancrage">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1668689723080-c50f6e823de5?auto=format&fit=crop&w=800&q=80')"><span class="badge">{{ pages.resources.soon_badge }}</span></div>
+        <div class="body">
+          <div class="tag">{{ pages.resources.article_grounding.tag }}</div>
+          <h3>{{ pages.resources.article_grounding.title }}</h3>
+          <p>{{ pages.resources.article_grounding.desc }}</p>
+        </div>
+      </div>
+
+      <div class="article-card soon" data-category="manifestation">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1689322366136-4740ee40d932?auto=format&fit=crop&w=800&q=80')"><span class="badge">{{ pages.resources.soon_badge }}</span></div>
+        <div class="body">
+          <div class="tag">{{ pages.resources.article_manifestation.tag }}</div>
+          <h3>{{ pages.resources.article_manifestation.title }}</h3>
+          <p>{{ pages.resources.article_manifestation.desc }}</p>
+        </div>
+      </div>
+
+      <div class="article-card soon" data-category="cycles">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1683138155815-d7edd806d8a3?auto=format&fit=crop&w=800&q=80')"><span class="badge">{{ pages.resources.soon_badge }}</span></div>
+        <div class="body">
+          <div class="tag">{{ pages.resources.article_cycles.tag }}</div>
+          <h3>{{ pages.resources.article_cycles.title }}</h3>
+          <p>{{ pages.resources.article_cycles.desc }}</p>
+        </div>
+      </div>
+
+      <div class="article-card soon" data-category="meditations">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1762538190509-140fb21fea20?auto=format&fit=crop&w=800&q=80')"><span class="badge">{{ pages.resources.soon_badge }}</span></div>
+        <div class="body">
+          <div class="tag">{{ pages.resources.article_5min.tag }}</div>
+          <h3>{{ pages.resources.article_5min.title }}</h3>
+          <p>{{ pages.resources.article_5min.desc }}</p>
+        </div>
+      </div>
+
+      <div class="article-card soon" data-category="vibration">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1762538190374-310cda4382dc?auto=format&fit=crop&w=800&q=80')"><span class="badge">{{ pages.resources.soon_badge }}</span></div>
+        <div class="body">
+          <div class="tag">{{ pages.resources.article_energy_drop.tag }}</div>
+          <h3>{{ pages.resources.article_energy_drop.title }}</h3>
+          <p>{{ pages.resources.article_energy_drop.desc }}</p>
+        </div>
+      </div>
+
+      <div class="article-card soon" data-category="ancrage">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1769537145747-ff380b863f49?auto=format&fit=crop&w=800&q=80')"><span class="badge">{{ pages.resources.soon_badge }}</span></div>
+        <div class="body">
+          <div class="tag">{{ pages.resources.article_evening_ritual.tag }}</div>
+          <h3>{{ pages.resources.article_evening_ritual.title }}</h3>
+          <p>{{ pages.resources.article_evening_ritual.desc }}</p>
+        </div>
+      </div>
+
+      <div class="article-card soon" data-category="manifestation">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1516558500749-2f9096c53225?auto=format&fit=crop&w=800&q=80')"><span class="badge">{{ pages.resources.soon_badge }}</span></div>
+        <div class="body">
+          <div class="tag">{{ pages.resources.article_resonance.tag }}</div>
+          <h3>{{ pages.resources.article_resonance.title }}</h3>
+          <p>{{ pages.resources.article_resonance.desc }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="newsletter">
+      <div>
+        <h3>{{ pages.resources.newsletter.title }}</h3>
+        <p>{{ pages.resources.newsletter.lead }}</p>
+      </div>
+      <div>
+        <form class="newsletter-form" onsubmit="return false;">
+          <input type="email" placeholder="{{ pages.resources.newsletter.email_placeholder }}" required />
+          <button type="submit" class="btn-primary">{{ pages.resources.newsletter.submit }}</button>
+        </form>
+        <div class="newsletter-note">{{ pages.resources.newsletter.note }}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ _footer_block }}
+
+{{ _whatsapp_block }}
+<script src="{{ _asset_prefix }}script.js"></script>
+</body>
+</html>
